@@ -1,0 +1,56 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+  margin-top: 25vh;
+  gap: 1vw;
+  width: 100%;
+  max-width: 70vw;
+}
+
+.card {
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+    object-position: center;
+  }
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  flex: 4;
+}
+
+.container:hover .card:not(:hover) {
+  filter: grayscale(100%);
+}
+
+button {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0 2%;
+  color: white;
+  background-color: slateblue;
+  border: 1px solid slateblue;
+}
+
+button:hover {
+  background-color: white;
+  color: slateblue;
+}
