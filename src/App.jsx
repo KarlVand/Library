@@ -1,25 +1,22 @@
-import "./App.css";
+import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./Homepage";
+import CardHover1 from "./CardHover-1/CardHover1";
 
 function App() {
   return (
-    <div className="w-screen h-screen flex">
-      <nav className="relative w-[50%] bg-slate-900 justify-center items-center m-auto">
-        <a
-          href=""
-          alt="HoverEffect">
-          Card Hover 1
-        </a>
-        <a
-          href="#"
-          alt="#"></a>
-        <a
-          href="#"
-          alt="#"></a>
-        <a
-          href="#"
-          alt="#"></a>
-      </nav>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Homepage />}
+        />
+        <Route
+          path="cardhover1"
+          element={<CardHover1 />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

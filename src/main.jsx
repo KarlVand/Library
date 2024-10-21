@@ -1,11 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
 
-import CardHover1 from "./CardHover-1/CardHover1.jsx";
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <CardHover1 />
+    <App />
   </StrictMode>
 );

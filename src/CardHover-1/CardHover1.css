@@ -16,7 +16,7 @@ main {
   align-items: center;
   margin: 1vw;
   margin-top: 25vh;
-  gap: 1vw;
+  gap: 0.5vw;
   width: 100%;
   max-width: 70vw;
 }
@@ -39,18 +39,4 @@ main {
 
 .container:hover .card:not(:hover) {
   filter: grayscale(100%);
-}
-
-button {
-  position: relative;
-  font-size: 1.5rem;
-  padding: 0 2%;
-  color: white;
-  background-color: slateblue;
-  border: 1px solid slateblue;
-}
-
-button:hover {
-  background-color: white;
-  color: slateblue;
 }

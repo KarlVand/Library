@@ -12,3 +12,20 @@ body {
   align-items: center;
   background-color: slategray;
 }
+
+button {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0 2%;
+  margin: 2%;
+  color: white;
+  background-color: slateblue;
+  border: 1px solid slateblue;
+  border-radius: 18px;
+  box-shadow: inset;
+}
+
+button:hover {
+  background-color: white;
+  color: slateblue;
+}
